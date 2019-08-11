@@ -1,0 +1,33 @@
+################
+# Base Setting #
+################
+listen_host: 0.0.0.0
+listen_port: 8080
+maxprocs: 8
+# run_mode: dev | prod
+run_mode: prod
+demo: true
+allow_origins:
+  - http://locahost:27101
+  - http://127.0.0.1:27101
+  - http://localhost:9527
+  - http://mobilelab.vn
+  - https://mobilelab.vn
+  - https://upload.photocloud.mobilelab.vn
+  - https://photocloud.mobilelab.vn
+  - https://ql.123xe.vn
+  - https://admin.123xe.vn
+  - https://xn--sa-m-ou5a8n.vn
+  - https://suame.ml
+allow_methods:
+  - POST
+allow_file_types:
+  - image/png
+  - image/jpeg
+resize_opts:
+  - 320
+  - 720
+# body_limit_size unit in MB
+body_limit_size: 200
+save_location: /data/photocloud/
+download_domain: https://photocloud.mobilelab.vn/
